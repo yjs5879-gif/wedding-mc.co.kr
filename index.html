@@ -9,7 +9,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NCTNP2GW');</script>
 <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2SX6EBTP9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="부산·울산·창원·김해 9년차 결혼식사회자 유재성. 신랑신부 만족도 1위, 진중하고 위트있는 예식, 2,400건 이상 행사 진행 ">
-<meta name="keywords" content="부산결혼식사회자, 울산결혼식사회자, 창원결혼식사회자, 김해결혼식사회자, 거제결혼식사회자, 진주결혼식사회자, 경남결혼식사회자, 결혼식사회자, 주례없는예식, 호텔예식사회자, 호텔결혼식사회자, 유재성 사회자, 사회자 유재성,파라곤웨딩홀사회자, 그랜드모먼트사회자, w웨딩사회자, K웨딩홀사회자">
+<meta name="keywords" content="부산결혼식사회자, 울산결혼식사회자, 창원결혼식사회자, 김해결혼식사회자, 거제결혼식사회자, 진주결혼식사회자, 경남결혼식사회자, 결혼식사회자, 주례없는예식, 호텔예식사회자, 호텔결혼식사회자, 유재성 사회자, 사회자 유재성, 파라곤웨딩홀사회자, 그랜드모먼트사회자, w웨딩사회자, K웨딩홀사회자">
 <meta name="author" content="유재성">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://wedding-mc.co.kr">
@@ -56,20 +55,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.6s cubic-bezier(.22,.68,0,1.1), transform 0.6s cubic-bezier(.22,.68,0,1.1); }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-  nav { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid #e8ecf2; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; }
-  .nav-logo { font-size: 15px; font-weight: 500; color: #1e2a3a; }
-  .nav-logo em { font-style: normal; color: #3d5a8a; }
-  .nav-cta { background: #3d5a8a; color: #fff; font-size: 13px; font-weight: 500; padding: 8px 20px; border-radius: 999px; text-decoration: none; }
+  /* ── 네비게이션 ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: transparent; padding: 18px 28px; display: flex; justify-content: space-between; align-items: center; transition: background 0.35s, border-color 0.35s, backdrop-filter 0.35s, padding 0.35s; border-bottom: 1px solid transparent; }
+  nav.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid #e8ecf2; padding: 14px 28px; }
+  .nav-logo { font-size: 15px; font-weight: 500; color: #fff; transition: color 0.35s; }
+  nav.scrolled .nav-logo { color: #1e2a3a; }
+  .nav-logo em { font-style: normal; color: rgba(255,255,255,0.8); transition: color 0.35s; }
+  nav.scrolled .nav-logo em { color: #3d5a8a; }
+  .nav-cta { background: rgba(255,255,255,0.15); color: #fff; font-size: 13px; font-weight: 500; padding: 8px 20px; border-radius: 999px; text-decoration: none; border: 1px solid rgba(255,255,255,0.38); transition: background 0.35s, color 0.35s, border-color 0.35s; }
+  nav.scrolled .nav-cta { background: #3d5a8a; color: #fff; border-color: #3d5a8a; }
 
-  .hero { background: #f0f4f9; padding: 64px 24px 68px; text-align: center; }
-  .hero-badge { display: inline-block; background: #dce6f4; color: #3d5a8a; font-size: 12px; font-weight: 500; padding: 5px 16px; border-radius: 999px; margin-bottom: 28px; letter-spacing: 0.05em; }
-  .hero-photo { width: 148px; height: 188px; object-fit: cover; object-position: top; border-radius: 74px 74px 20px 20px; margin: 0 auto 28px; display: block; box-shadow: 0 8px 32px rgba(61,90,138,0.13); border: 3px solid #fff; animation: heroIn 0.9s cubic-bezier(.22,.68,0,1.1) both; }
-  .hero-text { animation: heroIn 0.9s 0.15s cubic-bezier(.22,.68,0,1.1) both; }
-  @keyframes heroIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
-  .hero h1 { font-size: 26px; font-weight: 400; line-height: 1.65; color: #1e2a3a; margin-bottom: 14px; word-break: keep-all; }
-  .hero h1 strong { font-weight: 600; color: #3d5a8a; }
-  .hero-desc { font-size: 14px; color: #6b7a8d; line-height: 1.9; margin-bottom: 36px; word-break: keep-all; }
-  .btn-kakao { display: inline-flex; align-items: center; gap: 8px; background: #3d5a8a; color: #fff; font-size: 14px; font-weight: 500; padding: 14px 34px; border-radius: 999px; text-decoration: none; }
+  /* ── 히어로 (풀스크린) ── */
+  .hero { position: relative; height: 100vh; min-height: 580px; background-image: url('https://i.ibb.co/21VJX3mq/IMG-1713.jpg'); background-size: cover; background-position: center 15%; display: flex; align-items: flex-end; overflow: hidden; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,18,35,0.12) 0%, rgba(10,18,35,0.18) 40%, rgba(10,18,35,0.72) 100%); }
+  .hero-content { position: relative; z-index: 2; padding: 0 28px 64px; width: 100%; max-width: 700px; margin: 0 auto; animation: heroIn 1s cubic-bezier(.22,.68,0,1.1) both; }
+  @keyframes heroIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  .hero-badge { display: inline-block; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.34); color: rgba(255,255,255,0.92); font-size: 12px; font-weight: 500; padding: 5px 16px; border-radius: 999px; margin-bottom: 18px; letter-spacing: 0.05em; backdrop-filter: blur(4px); }
+  .hero h1 { font-size: 30px; font-weight: 400; line-height: 1.55; color: #fff; margin-bottom: 14px; word-break: keep-all; }
+  .hero h1 strong { font-weight: 600; }
+  .hero-desc { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.9; margin-bottom: 32px; word-break: keep-all; }
+  .btn-kakao { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #1e2a3a; font-size: 14px; font-weight: 600; padding: 14px 34px; border-radius: 999px; text-decoration: none; }
+  .hero-scroll-hint { position: absolute; bottom: 22px; right: 28px; z-index: 2; color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.1em; display: flex; flex-direction: column; align-items: center; gap: 5px; animation: bounce 2s infinite; }
+  .hero-scroll-hint::after { content: '↓'; font-size: 15px; }
+  @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
 
   .section { padding: 60px 28px; max-width: 700px; margin: 0 auto; }
   .sec-label { font-size: 11px; font-weight: 600; color: #3d5a8a; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
@@ -77,20 +85,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .sec-body { font-size: 15px; color: #5a6b80; line-height: 1.9; word-break: keep-all; overflow-wrap: break-word; }
   .divider { height: 1px; background: #e8ecf2; margin: 0 28px; }
 
+  /* ── 프로필 ── */
   .profile-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px; }
   .profile-img { width: 296px; height: 376px; object-fit: cover; object-position: top; border-radius: 20px; box-shadow: 0 8px 32px rgba(61,90,138,0.13); }
-
   .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 28px; }
   .stat-card { background: #fff; border: 1px solid #e8ecf2; border-radius: 14px; padding: 20px 12px; text-align: center; box-shadow: 0 2px 8px rgba(61,90,138,0.04); }
   .stat-num { font-size: 15px; font-weight: 600; color: #3d5a8a; margin-bottom: 5px; line-height: 1.3; white-space: nowrap; }
   .stat-label { font-size: 12px; color: #8a9ab0; line-height: 1.45; word-break: keep-all; }
 
+  /* ── 서비스 ── */
   .services { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
   .svc-row { display: flex; align-items: flex-start; gap: 14px; background: #fff; border: 1px solid #e8ecf2; border-radius: 14px; padding: 18px 20px; box-shadow: 0 2px 8px rgba(61,90,138,0.04); }
   .svc-icon { width: 32px; height: 32px; border-radius: 8px; background: #edf2f9; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; }
   .svc-title { font-size: 14px; font-weight: 500; color: #1e2a3a; margin-bottom: 3px; word-break: keep-all; }
   .svc-desc { font-size: 13px; color: #7a8da0; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
 
+  /* ── 진행 과정 ── */
+  .steps { display: flex; flex-direction: column; margin-top: 28px; }
+  .step { display: flex; gap: 16px; align-items: flex-start; padding-bottom: 24px; }
+  .step:last-child { padding-bottom: 0; }
+  .step-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+  .step-num { width: 36px; height: 36px; border-radius: 50%; background: #3d5a8a; color: #fff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; }
+  .step-line { width: 2px; background: #dce6f4; flex: 1; min-height: 18px; margin-top: 4px; }
+  .step:last-child .step-line { display: none; }
+  .step-title { font-size: 15px; font-weight: 500; color: #1e2a3a; margin-bottom: 3px; margin-top: 6px; word-break: keep-all; }
+  .step-desc { font-size: 13px; color: #7a8da0; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; }
+
+  /* ── 후기 텍스트 카드 ── */
+  .review-scroll-wrap { display: flex; gap: 14px; overflow-x: auto; padding: 4px 0 16px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: #3d5a8a #e8ecf2; margin-top: 24px; }
+  .review-scroll-wrap::-webkit-scrollbar { height: 4px; }
+  .review-scroll-wrap::-webkit-scrollbar-track { background: #e8ecf2; border-radius: 2px; }
+  .review-scroll-wrap::-webkit-scrollbar-thumb { background: #3d5a8a; border-radius: 2px; }
+  .review-card { flex: 0 0 260px; background: #fff; border: 1px solid #e8ecf2; border-radius: 16px; padding: 22px 20px; scroll-snap-align: start; box-shadow: 0 4px 16px rgba(61,90,138,0.07); display: flex; flex-direction: column; gap: 12px; }
+  .review-stars { color: #f5a623; font-size: 13px; letter-spacing: 2px; }
+  .review-text { font-size: 13px; color: #3a4d63; line-height: 1.75; word-break: keep-all; flex: 1; }
+  .review-meta { font-size: 11px; color: #9aaabb; border-top: 1px solid #e8ecf2; padding-top: 10px; display: flex; justify-content: space-between; }
+  .review-meta span:first-child::before { content: "• "; }
+  .review-hint { font-size: 12px; color: #9aaabb; margin-top: 8px; text-align: center; }
+
+  /* ── 가격 ── */
   .price-banner { background: #edf2f9; color: #3d5a8a; border-radius: 12px; padding: 13px 20px; text-align: center; font-size: 14px; font-weight: 500; margin-bottom: 18px; border: 1px solid #d0dff0; word-break: keep-all; }
   .price-banner em { color: #2a4470; font-style: normal; font-weight: 600; }
   .price-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(61,90,138,0.04); }
@@ -101,6 +134,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .price-table .final { color: #3d5a8a; font-size: 17px; font-weight: 600; text-align: right; white-space: nowrap; }
   .price-note { font-size: 12px; color: #9aaabb; margin-top: 14px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word; }
 
+  /* ── 할인 이벤트 ── */
   .event-highlight { background: #edf2f9; border: 1px solid #d0dff0; border-radius: 14px; padding: 20px 24px; text-align: center; margin-bottom: 20px; }
   .event-highlight p { font-size: 13px; color: #7a8da0; margin-bottom: 4px; }
   .event-highlight strong { font-size: 22px; color: #3d5a8a; font-weight: 600; }
@@ -114,27 +148,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .event-discount small { font-size: 11px; display: block; color: #8a9ab0; font-weight: 400; }
   .event-note { font-size: 12px; color: #9aaabb; margin-top: 10px; word-break: keep-all; }
 
-  .review-slider-wrap { overflow: hidden; margin-top: 24px; }
-  .review-track { display: flex; gap: 10px; transition: transform 0.45s cubic-bezier(.4,0,.2,1); }
-  .review-slide { flex: 0 0 calc(25% - 8px); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(61,90,138,0.10); }
-  .review-slide img { width: 100%; height: auto; display: block; cursor: zoom-in; -webkit-user-drag: none; user-select: none; }
-  .review-nav { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; }
-  .review-nav button { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #d0dff0; background: #fff; color: #3d5a8a; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-  .review-nav button:hover { background: #edf2f9; }
-  .review-dots { display: flex; gap: 6px; }
-  .review-dot { width: 7px; height: 7px; border-radius: 50%; background: #d0dff0; cursor: pointer; transition: background 0.2s, transform 0.2s; border: none; padding: 0; }
-  .review-dot.active { background: #3d5a8a; transform: scale(1.3); }
+  /* ── FAQ ── */
+  .faq-list { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .faq-item { background: #fff; border: 1px solid #e8ecf2; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(61,90,138,0.04); }
+  .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; font-size: 14px; font-weight: 500; color: #1e2a3a; cursor: pointer; gap: 12px; word-break: keep-all; user-select: none; }
+  .faq-q:hover { background: #f5f8fc; }
+  .faq-icon { width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid #d0dff0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; color: #3d5a8a; transition: transform 0.3s, background 0.3s, border-color 0.3s; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); background: #3d5a8a; border-color: #3d5a8a; color: #fff; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(.4,0,.2,1), padding 0.35s; padding: 0 20px; font-size: 13px; color: #5a6b80; line-height: 1.85; word-break: keep-all; }
+  .faq-item.open .faq-a { max-height: 400px; padding: 0 20px 20px; }
 
-  .steps { display: flex; flex-direction: column; margin-top: 28px; }
-  .step { display: flex; gap: 16px; align-items: flex-start; padding-bottom: 24px; }
-  .step:last-child { padding-bottom: 0; }
-  .step-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
-  .step-num { width: 36px; height: 36px; border-radius: 50%; background: #3d5a8a; color: #fff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; }
-  .step-line { width: 2px; background: #dce6f4; flex: 1; min-height: 18px; margin-top: 4px; }
-  .step:last-child .step-line { display: none; }
-  .step-title { font-size: 15px; font-weight: 500; color: #1e2a3a; margin-bottom: 3px; margin-top: 6px; word-break: keep-all; }
-  .step-desc { font-size: 13px; color: #7a8da0; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; }
-
+  /* ── 체크리스트 ── */
   .checklist-section { max-width: 700px; margin: 0 auto; padding: 0 28px 40px; }
   .checklist-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
   .checklist-num { width: 32px; height: 32px; border-radius: 8px; background: #1e2a3a; color: #fff; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -150,6 +174,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .cl-dot { width: 6px; height: 6px; border-radius: 50%; background: #d0dff0; cursor: pointer; transition: background 0.2s, transform 0.2s; border: none; padding: 0; }
   .cl-dot.active { background: #3d5a8a; transform: scale(1.3); }
 
+  /* ── 문의 ── */
   .contact-box { background: #3d5a8a; border-radius: 20px; padding: 44px 28px; text-align: center; margin-top: 24px; }
   .contact-box h3 { font-size: 20px; font-weight: 500; color: #fff; margin-bottom: 10px; }
   .contact-box > p { font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 28px; line-height: 1.75; word-break: keep-all; }
@@ -158,9 +183,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .sns-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
   .sns-link { display: inline-flex; align-items: center; gap: 7px; border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 500; padding: 11px 26px; border-radius: 999px; text-decoration: none; background: rgba(255,255,255,0.08); }
 
+  /* ── 라이트박스 ── */
   .lightbox { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(5,10,20,0.93); align-items: center; justify-content: center; }
   .lightbox.open { display: flex; }
-  .lightbox img { max-width: 88vw; max-height: 86vh; border-radius: 12px; object-fit: contain; display: block; box-shadow: 0 8px 60px rgba(0,0,0,0.6); pointer-events: none; }
+  .lightbox img { max-width: 88vw; max-height: 86vh; border-radius: 12px; object-fit: contain; display: block; pointer-events: none; }
   .lb-close { position: fixed; top: 16px; right: 20px; color: #fff; font-size: 36px; cursor: pointer; z-index: 10000; opacity: 0.85; background: none; border: none; line-height: 1; }
   .lb-arrow { position: fixed; top: 50%; transform: translateY(-50%); color: #fff; font-size: 48px; cursor: pointer; opacity: 0.75; background: none; border: none; z-index: 10000; padding: 0 16px; line-height: 1; }
   .lb-arrow:hover { opacity: 1; }
@@ -170,11 +196,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .footer { text-align: center; padding: 28px 24px; font-size: 12px; color: #9aaabb; background: #fff; border-top: 1px solid #e8ecf2; }
 
   @media (max-width: 480px) {
-    .hero h1 { font-size: 22px; }
-    .review-slide { flex: 0 0 calc(50% - 6px); }
+    .hero h1 { font-size: 24px; }
+    .hero-content { padding: 0 20px 52px; }
     .section { padding: 48px 20px; }
     .profile-img { width: 240px; height: 305px; }
     .cl-slide { flex: 0 0 100%; }
+    .review-card { flex: 0 0 230px; }
   }
 </style>
 </head>
@@ -182,27 +209,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCTNP2GW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<nav>
+<nav id="mainNav">
   <div class="nav-logo">결혼식사회자 <em>유재성</em></div>
   <a class="nav-cta" href="https://open.kakao.com/me/hostjs" target="_blank">문의하기</a>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">9년차 결혼식 전문 사회자</div>
-  <img class="hero-photo" src="https://i.ibb.co/21VJX3mq/IMG-1713.jpg" alt="사회자 유재성">
-  <div class="hero-text">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">9년차 결혼식 전문 사회자</div>
     <h1>여러분의 소중한 날을<br><strong>따뜻하게 빛내드릴게요</strong></h1>
     <p class="hero-desc">신랑 신부의 이야기를 진심으로 담아<br>세상에 단 하나뿐인 결혼식을 만들어드립니다.</p>
     <a class="btn-kakao" href="https://open.kakao.com/me/hostjs" target="_blank">💬 카카오톡으로 문의하기</a>
   </div>
+  <div class="hero-scroll-hint">SCROLL</div>
 </div>
 
 <div class="divider"></div>
 
-<!-- PROFILE -->
+<!-- 소개 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label" style="text-align:center;">사회자 소개</div></div>
   <div class="fade-up"><div class="sec-title" style="text-align:center;">9년, 2,400번의<br>특별한 순간</div></div>
@@ -224,22 +251,178 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="divider"></div>
 
-<!-- SERVICES -->
+<!-- 서비스 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label">제공 서비스</div></div>
   <div class="fade-up"><div class="sec-title">처음부터 끝까지<br>함께 준비합니다</div></div>
   <div class="services">
-    <div class="svc-row fade-up"><div class="svc-icon">🎙</div><div><div class="svc-title">사전 상담을 통한 상세한 디렉팅</div><div class="svc-desc">충분한 사전 상담으로 두 분의 스타일과 원하는 분위기를 파악하고 방향을 잡아드립니다.</div></div></div>
-    <div class="svc-row fade-up"><div class="svc-icon">📋</div><div><div class="svc-title">신랑신부 맞춤형 식순 세팅</div><div class="svc-desc">정해진 틀이 아닌, 두 분에게 꼭 맞는 식순을 직접 구성해드립니다.</div></div></div>
-    <div class="svc-row fade-up"><div class="svc-icon">✍️</div><div><div class="svc-title">연애스토리 기반 맞춤형 대본 작성</div><div class="svc-desc">두 분의 만남과 이야기를 담은 세상에 하나뿐인 대본을 작성합니다.</div></div></div>
-    <div class="svc-row fade-up"><div class="svc-icon">🎵</div><div><div class="svc-title">본식 음원 제공 및 편집</div><div class="svc-desc">입장, 행진, 축가 등 본식에 필요한 음원을 직접 제공하고 편집해드립니다.</div></div></div>
-    <div class="svc-row fade-up"><div class="svc-icon">📁</div><div><div class="svc-title">각종 샘플 60종 이상 제공</div><div class="svc-desc">혼인서약서, 성혼선언문, 덕담 등 다양한 샘플을 참고하여 원하는 내용을 고를 수 있습니다.</div></div></div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">🎙</div>
+      <div><div class="svc-title">사전 상담을 통한 상세한 디렉팅</div><div class="svc-desc">충분한 사전 상담으로 두 분의 스타일과 원하는 분위기를 파악하고 방향을 잡아드립니다.</div></div>
+    </div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">📋</div>
+      <div><div class="svc-title">신랑신부 맞춤형 식순 세팅</div><div class="svc-desc">정해진 틀이 아닌, 두 분에게 꼭 맞는 식순을 직접 구성해드립니다.</div></div>
+    </div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">✍️</div>
+      <div><div class="svc-title">연애스토리 기반 맞춤형 대본 작성</div><div class="svc-desc">두 분의 만남과 이야기를 담은 세상에 하나뿐인 대본을 작성합니다.</div></div>
+    </div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">🎵</div>
+      <div><div class="svc-title">본식 음원 제공 및 편집</div><div class="svc-desc">입장, 행진, 축가 등 본식에 필요한 음원을 직접 제공하고 편집해드립니다.</div></div>
+    </div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">📁</div>
+      <div><div class="svc-title">각종 샘플 60종 이상 제공</div><div class="svc-desc">혼인서약서, 성혼선언문, 덕담 등 다양한 샘플을 참고하여 원하는 내용을 고를 수 있습니다.</div></div>
+    </div>
+    <div class="svc-row fade-up">
+      <div class="svc-icon">📝</div>
+      <div><div class="svc-title">결혼식 관련 체크리스트 제공</div><div class="svc-desc">결혼식 준비 타임라인, 본식 전 체크리스트, 본식 당일 체크리스트, 피로연 에티켓 등 결혼식을 준비함에 있어 막힘이 없도록 도와드립니다.</div></div>
+    </div>
   </div>
 </div>
 
 <div class="divider"></div>
 
-<!-- PRICING -->
+<!-- 진행 과정 (7단계) -->
+<div class="section">
+  <div class="fade-up"><div class="sec-label">진행 과정</div></div>
+  <div class="fade-up"><div class="sec-title">이렇게 함께 준비해요</div></div>
+  <div class="steps">
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div>
+      <div><div class="step-title">예약 및 상담일정 확정</div><div class="step-desc">문의 채널을 통해 날짜와 장소를 알려주시면 빠르게 확인 후 상담 일정을 조율해드립니다.</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div>
+      <div><div class="step-title">상담</div><div class="step-desc">주로 전화 상담으로 30분 이내 진행됩니다. 대면 상담을 원하시면 일정을 맞춰 진행해드립니다.</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div>
+      <div><div class="step-title">식순 및 샘플 전달</div><div class="step-desc">준비에 필요한 자료를 전달드립니다.<br>식순, 각종 샘플, 음원 리스트, 설문 양식 등</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div>
+      <div><div class="step-title">본식 준비</div><div class="step-desc">맞춤형 식순, 음원 편집 및 제공, 혼인서약서, 성혼선언문 제작 후 웨딩홀에 바로 전달하실 수 있도록 정리해드립니다.</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">5</div><div class="step-line"></div></div>
+      <div><div class="step-title">대본 최종 수정 후 확정</div><div class="step-desc">신랑신부님과 대본을 함께 체크하며 최종 수정 후 확정합니다.</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">6</div><div class="step-line"></div></div>
+      <div><div class="step-title">본식 전 체크리스트 전달</div><div class="step-desc">본식 전 참고하시면 좋은 사항들을 체크리스트로 정리하여 제공해드립니다.</div></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-left"><div class="step-num">7</div></div>
+      <div><div class="step-title">본식</div><div class="step-desc">두 분의 가장 빛나는 날, 잊지 못할 순간을 만들어드립니다.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- 후기 (텍스트 카드 / 가로 스크롤) -->
+<div class="section">
+  <div class="fade-up"><div class="sec-label">예식 후기</div></div>
+  <div class="fade-up"><div class="sec-title">함께한 분들의<br>소중한 이야기</div></div>
+  <div class="fade-up">
+    <div class="review-scroll-wrap" id="reviewScrollWrap">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">저희 가족들이 사회자님 누구냐고~<br>역시 전문 사회자는 다르다고~~ 칭찬 엄청 많이 해주셨어요 ㅎㅎ<br>중간중간 유쾌하게 잘 이끌어주셔서 감사드리고,<br>음원도 식순도 기간에 맞게 잘 맞춰주셔서 진심으로 감사드립니다!!</p>
+<div class="review-meta"><span>이ㅇㅇ 신부님</span><span>부산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">사회자님 덕분에 정말 결혼식 잘 진행할 수 있었어요!!<br>초보 신랑신부가 어버버해도 너무 매끄럽게 진행해주셔서<br>하객분들 인사드리는데 사회자분 누구냐고 많이 물어보시더라구요 ㅋㅋㅋ<br>정말 감사했습니다!!!</p>
+<div class="review-meta"><span>박ㅇㅇ 신부님</span><span>창원</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">역시!!! 전문가는 다르신가봐요 ㅠㅠ<br>진짜 센스있는 진행과 타이밍..<br>요구도 여러 개 있었는데 지인들이 찍어준 동영상 보면서 아주 만족했답니다 😊<br>마지막으로 진짜 깔끔한 진행 너무 좋았어요 진짜 ㅎㅎ</p>
+<div class="review-meta"><span>박ㅇㅇ 신부님</span><span>김해</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">진짜 제가 머릿속에서 그리고 상상하던<br>딱 그대로 진행해주셔서 너무 감사하고 감동이었습니다~~<br>주변에서도 다들 진행 깔끔하니 누구냐고 묻더라구요!!!<br>덕분에 식 잘 치렀어요, 너무 감사합니다~~ 💗</p>
+<div class="review-meta"><span>김ㅇㅇ 신부님</span><span>부산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">사회자님의 명확하고 부드러운 목소리와 딕션으로<br>하객들이 정말 저희에게 집중하고 있구나를 느꼈어요!!<br>진짜 지인분들 결혼한다면 왕왕 추천드리고 다닐게요!!<br>정말 잊지 못할 추억, 기억 만들어주셔서 감사합니다!! 👍👍</p>
+<div class="review-meta"><span>정ㅇㅇ 신부님</span><span>울산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">오늘 사회 너무 잘 봐주셔서 속으로 너무 기분 좋았어요!!<br>진짜 지루하지 않게 유머있게 잘해주셔서 정말 감사했답니다!! 😊<br>목소리도 너무 좋으세요 ㅎㅎ<br>걱정을 왜 했나 싶을 만큼 완전 대만족이었답니다 ㅎㅎ</p>
+<div class="review-meta"><span>김ㅇㅇ 신부님</span><span>부산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">제 지인들도 사회자님 칭찬을 많이 해주셔서 제가 다 뿌듯했네요<br>디테일한 부분까지 다 신경써주시고 너무 감사합니다<br>특히 혼인서약서 피드백 너무 감사드려요.<br>전문가는 다르다는 것을 다시 한 번 느꼈습니다.</p>
+<div class="review-meta"><span>윤ㅇㅇ 신랑님</span><span>창원</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">이제 막 와주신 분들께 전화 드리고 있는데,<br>사회자님이 정말 잘 진행하시더라는 이야기 많이 들었어요~<br>저희 둘 다 실수투성이었는데 잘 이끌어주셔서 너무 감사했습니다~<br>하시는 일 모두 잘 되시고, 좋은 일 가득하세요!</p>
+<div class="review-meta"><span>장ㅇㅇ 신랑님</span><span>김해</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">깔끔한 진행과 센스있는 언변으로 결혼식의 시작과 진행, 마무리를 맡아주셔서 너무나도 감사합니다.<br>입장 전 문 뒤에서 멘트를 어렴풋이 들으며 긴장도 많이 풀어졌어요!!<br>사회자님 덕분에 저희 결혼식이 더욱 더 빛이 났던 것 같아요 ✨</p>
+<div class="review-meta"><span>조ㅇㅇ 신부님</span><span>부산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">오늘 사회도 매끄럽게 잘해주셔서 시간 가는 줄 모르고 결혼식 한 것 같아요!<br>벌써 시간이?? 이럴 정도로 빠르게 흘러가더라구요!<br>저희를 위해 애써주셔서 너무 감사했습니다~<br>항상 행복하시길 바라겠습니다.</p>
+<div class="review-meta"><span>한ㅇㅇ 신랑님</span><span>울산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">사회자님의 차분하고 센스있는 진행 덕분에<br>모든 순간이 매끄럽고 즐거웠으며, 참석해주신 모든 분들이 편안하고 행복한 시간을 보낼 수 있었습니다.<br>특히 중요한 순간마다 자연스럽고 따뜻한 멘트로 분위기를 이끌어주셔서<br>결혼식이 한층 더 빛날 수 있었습니다.</p>
+<div class="review-meta"><span>서ㅇㅇ 신부님</span><span>김해</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">중간에 보통의 식순과 다른 부분이 있었는데<br>매끄럽게 잘 이끌어주신 덕분에 무사히 식을 잘 마칠 수 있었습니다.<br>부모님도 신뢰감 있는 목소리로 식이 진행되었다고 만족하셨어요.<br>저희 부부의 시작을 알리는 자리에 함께 해주셔서 감사했습니다.</p>
+<div class="review-meta"><span>임ㅇㅇ 신랑님</span><span>창원</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">딱 제가 원하던 깔끔하고 멋있는 진행<br>덕분에 더 행복하게 결혼식 마무리 할 수 있었습니다!!<br>오신다고 고생 많으셨고, 사회 잘 봐주셔서 정말 감사드립니다!<br>축복해주셔서 다시 한 번 감사드리고, 항상 행복하세요~!</p>
+<div class="review-meta"><span>오ㅇㅇ 신부님</span><span>부산</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">제가 무리한 부탁을 드린 건 아닌지 걱정했는데<br>너무나 잘해주셔서 감사했습니다!!<br>덕분에 정말 행복한 결혼식으로 마무리 잘했습니다 💛<br>항상 건강 조심하시고 오늘 너무 감사했습니다!! 🌸</p>
+<div class="review-meta"><span>신ㅇㅇ 신부님</span><span>진주</span></div>
+      </div>
+
+
+    </div>
+    <p class="review-hint">← 좌우로 스크롤하여 더 보기</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- 가격 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label">2026년 섭외비</div></div>
   <div class="fade-up"><div class="sec-title">출장비 포함,<br>추가 비용 없습니다</div></div>
@@ -258,7 +441,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="divider"></div>
 
-<!-- EVENT -->
+<!-- 할인 이벤트 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label">할인 이벤트</div></div>
   <div class="fade-up"><div class="sec-title">2026년 할인 이벤트</div></div>
@@ -287,67 +470,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="divider"></div>
 
-<!-- REVIEW SLIDER -->
+<!-- FAQ -->
 <div class="section">
-  <div class="fade-up"><div class="sec-label">예식 후기</div></div>
-  <div class="fade-up"><div class="sec-title">함께한 분들의<br>소중한 이야기</div></div>
-  <div class="fade-up">
-    <div class="review-slider-wrap" id="sliderWrap">
-      <div class="review-track" id="reviewTrack">
-        <div class="review-slide"><img src="https://i.ibb.co/JjSz40zB/018.png" alt="후기1" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/5hSw3G7N/019.png" alt="후기2" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/5g2Q0KQY/014.png" alt="후기3" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/cctfx3NW/015.png" alt="후기4" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/d4CNWNkV/016.png" alt="후기5" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/H5mJkMR/011.png" alt="후기6" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/fzXHMdrd/012.png" alt="후기7" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/Zz3dyJnh/013.png" alt="후기8" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/0RnWb0CM/017.png" alt="후기9" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/Z6ZW383m/11.png" alt="후기10" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/rRPYBkVV/12.png" alt="후기11" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/tTWXmpLV/10.png" alt="후기12" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/SX82mKWt/021.png" alt="후기13" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/xK1WWwNC/022.png" alt="후기14" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/9H3xwNZT/020.png" alt="후기15" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/mrxQj0dx/023.png" alt="후기16" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/gFz1ysVC/024.png" alt="후기17" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/NdRfWSz6/025.png" alt="후기18" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/tTbW8mBV/026.png" alt="후기19" loading="lazy"></div>
-        <div class="review-slide"><img src="https://i.ibb.co/BV3yGpB2/027.png" alt="후기20" loading="lazy"></div>
-      </div>
+  <div class="fade-up"><div class="sec-label">자주 묻는 질문</div></div>
+  <div class="fade-up"><div class="sec-title">궁금하신 점을<br>정리했습니다</div></div>
+  <div class="faq-list fade-up">
+
+    <div class="faq-item">
+      <div class="faq-q"><span>상담은 어떻게 진행되나요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">주로 전화상담 및 단톡방을 통해 진행되며, 대면 상담을 희망하시면 일정을 맞춰 진행 가능합니다.</div>
     </div>
-    <div class="review-nav">
-      <button id="revPrev">‹</button>
-      <div class="review-dots" id="revDots"></div>
-      <button id="revNext">›</button>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>맞춤형 예식도 진행 가능하신가요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">주례없는 예식, 주례있는 예식, 호텔 예식, 기독교 예식, 예도단 있는 예식, 뮤지컬 웨딩 등 어떤 예식이든 맞춤형으로 진행 가능합니다.</div>
     </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>예식 진행 스타일은 어떠신가요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">진중하게, 위트있게, 유쾌하게 등 두 분이 원하시는 분위기에 맞게 진행합니다. 사전에 협의되지 않은 과한 애드립은 없으니 안심하셔도 됩니다.<br><br>저는 딱딱하고 무거운 분위기보다는 상황에 맞춰 유연하게 분위기를 만들어가는 편입니다. 참석해주신 모든 분들이 편안하게 웃음 짓는 결혼식이 될 수 있도록 만들어드리겠습니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>본식 음원(BGM, MR)은 저희가 준비해야 하나요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">입장곡, 행진곡, 축가 MR 등 각종 음원은 구하기 어렵거나 편집이 극도로 어려운 경우를 제외하면 제가 직접 편집하여 제공해드립니다. 다른 것도 신경쓰실 게 많을테니 편하게 맡겨주세요.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>대본은 직접 작성하고 준비하시나요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">네, 식순 확정 및 설문 작성이 끝나면 두 분의 스토리를 바탕으로 매번 직접 작성해드리고 있습니다. 그렇기에 일부 식순(개식사 등)을 제외하고는 중복되는 대본이 없습니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>대본은 언제 받아볼 수 있나요? 수정도 가능한가요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">대본은 본식 주 평일 중에 전달드리며, 예식장에는 따로 전달하실 필요가 없습니다. 수정도 물론 가능하니 편하게 말씀해주세요. 두 분이 만족하시는 것이 최우선이기에 루즈해지지 않는 선에서 알맞게 수정해드립니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>예식 당일 몇 시에 도착하시나요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">식 전 20~30분 전에 도착하여 웨딩홀 담당자분들과 미팅을 진행합니다. 이 때 식순, 음원, 음향, 조명, 동선 체크를 모두 끝낸 후 두 분과 미팅 후 사전 안내방송을 진행합니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>예약 및 결제는 어떻게 진행되나요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">상담 후 전달드린 계좌로 예약금을 입금하시면 예약이 확정됩니다. 잔금은 결혼식 당일 예식이 잘 마무리된 후 입금해주시면 됩니다.<br><br>저는 정식 등록 사업자로서 추가금 없이 현금영수증 발행이 가능합니다. 발급을 원하실 경우 예식 종료 후 말씀해 주시면 일괄 처리해드립니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span>예약 후 취소·변경이 가능한가요?</span><div class="faq-icon">+</div></div>
+      <div class="faq-a">일정이 맞는다면 날짜 변경은 가능합니다. 취소의 경우 일정에 따라 다를 수 있으니 자세한 사항은 카카오톡으로 문의 주세요.</div>
+    </div>
+
   </div>
 </div>
 
 <div class="divider"></div>
 
-<!-- STEPS -->
-<div class="section">
-  <div class="fade-up"><div class="sec-label">진행 과정</div></div>
-  <div class="fade-up"><div class="sec-title">이렇게 함께 준비해요</div></div>
-  <div class="steps">
-    <div class="step fade-up"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div><div class="step-title">예약</div><div class="step-desc">문의 채널을 통해 날짜와 장소를 알려주세요. 빠르게 확인 후 답변드립니다.</div></div></div>
-    <div class="step fade-up"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div><div class="step-title">상담 일정 확정</div><div class="step-desc">예약 확인 후 두 분께 맞는 상담 일정을 조율합니다.</div></div></div>
-    <div class="step fade-up"><div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div><div><div class="step-title">상담</div><div class="step-desc">상담은 주로 전화 상담을 통해 30분 이내로 진행되며, 대면 상담 희망시 장소와 일정을 맞춰 진행합니다.</div></div></div>
-    <div class="step fade-up"><div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div><div><div class="step-title">본식 준비</div><div class="step-desc">확정된 식순과 대본, 음원 편집까지 완료하고 마지막까지 꼼꼼히 점검합니다.</div></div></div>
-    <div class="step fade-up"><div class="step-left"><div class="step-num">5</div></div><div><div class="step-title">본식</div><div class="step-desc">두 분의 가장 빛나는 날, 진중함과 위트로 잊지 못할 순간을 만들어드립니다.</div></div></div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- CHECKLIST -->
+<!-- 체크리스트 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label">결혼 준비 가이드</div></div>
   <div class="fade-up"><div class="sec-title">결혼 준비,<br>이렇게 시작하세요</div></div>
 </div>
 
-<!-- 1. 결혼준비 타임라인 -->
 <div class="checklist-section fade-up">
   <div class="checklist-header"><span class="checklist-num">01</span><span class="checklist-title">결혼준비 타임라인</span></div>
   <div class="checklist-slider-wrap">
@@ -364,43 +548,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- 2. 웨딩홀 투어 체크리스트 -->
 <div class="checklist-section fade-up">
-  <div class="checklist-header"><span class="checklist-num">02</span><span class="checklist-title">웨딩홀 투어 체크리스트</span></div>
+  <div class="checklist-header"><span class="checklist-num">02</span><span class="checklist-title">본식 전 체크리스트</span></div>
   <div class="checklist-slider-wrap">
     <div class="checklist-track" id="cl-track-2">
-      <div class="cl-slide"><img src="https://i.ibb.co/d07NpBBH/slide-01-1.png" alt="웨딩홀 01" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/WvVn4Kzp/slide-02-1.png" alt="웨딩홀 02" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/jkXV1Dzv/slide-03-1.png" alt="웨딩홀 03" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/6LHCf3Z/slide-04-1.png" alt="웨딩홀 04" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/C5Skyx7f/slide-05-1.png" alt="웨딩홀 05" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/0jn9RXG5/slide-06-1.png" alt="웨딩홀 06" loading="lazy"></div>
-    </div>
-    <div class="cl-nav"><button class="cl-prev" data-id="2">‹</button><div class="cl-dots" id="cl-dots-2"></div><button class="cl-next" data-id="2">›</button></div>
-  </div>
-</div>
-
-<!-- 3. 결혼식 사회자 섭외 체크리스트 -->
-<div class="checklist-section fade-up">
-  <div class="checklist-header"><span class="checklist-num">03</span><span class="checklist-title">결혼식 사회자 섭외 체크리스트</span></div>
-  <div class="checklist-slider-wrap">
-    <div class="checklist-track" id="cl-track-3">
-      <div class="cl-slide"><img src="https://i.ibb.co/HpnsBxyR/slide-01.png" alt="섭외 01" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/fzFdx0NL/slide-02.png" alt="섭외 02" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/Y7zksgTR/slide-03.png" alt="섭외 03" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/Vp0Wrx4S/slide-04.png" alt="섭외 04" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/3mdXCy4k/slide-05.png" alt="섭외 05" loading="lazy"></div>
-      <div class="cl-slide"><img src="https://i.ibb.co/mVKnMRHS/slide-06.png" alt="섭외 06" loading="lazy"></div>
-    </div>
-    <div class="cl-nav"><button class="cl-prev" data-id="3">‹</button><div class="cl-dots" id="cl-dots-3"></div><button class="cl-next" data-id="3">›</button></div>
-  </div>
-</div>
-
-<!-- 4. 본식 전 체크리스트 -->
-<div class="checklist-section fade-up">
-  <div class="checklist-header"><span class="checklist-num">04</span><span class="checklist-title">본식 전 체크리스트</span></div>
-  <div class="checklist-slider-wrap">
-    <div class="checklist-track" id="cl-track-4">
       <div class="cl-slide"><img src="https://i.ibb.co/0pdxzyb9/slide-01.png" alt="본식전 01" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/hRrjsFn0/slide-02.png" alt="본식전 02" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/yFtQ7kbJ/slide-03.png" alt="본식전 03" loading="lazy"></div>
@@ -410,15 +561,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cl-slide"><img src="https://i.ibb.co/zWrLWWWG/slide-07.png" alt="본식전 07" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/7dt28LnP/slide-08.png" alt="본식전 08" loading="lazy"></div>
     </div>
-    <div class="cl-nav"><button class="cl-prev" data-id="4">‹</button><div class="cl-dots" id="cl-dots-4"></div><button class="cl-next" data-id="4">›</button></div>
+    <div class="cl-nav"><button class="cl-prev" data-id="2">‹</button><div class="cl-dots" id="cl-dots-2"></div><button class="cl-next" data-id="2">›</button></div>
   </div>
 </div>
 
-<!-- 5. 본식 필수 체크리스트 -->
 <div class="checklist-section fade-up">
-  <div class="checklist-header"><span class="checklist-num">05</span><span class="checklist-title">본식 필수 체크리스트</span></div>
+  <div class="checklist-header"><span class="checklist-num">03</span><span class="checklist-title">본식 필수 체크리스트</span></div>
   <div class="checklist-slider-wrap">
-    <div class="checklist-track" id="cl-track-5">
+    <div class="checklist-track" id="cl-track-3">
       <div class="cl-slide"><img src="https://i.ibb.co/1NKcFgs/slide-01.png" alt="본식 01" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/CKgFTX6t/slide-02.png" alt="본식 02" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/LDLZzgZH/slide-03.png" alt="본식 03" loading="lazy"></div>
@@ -428,15 +578,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cl-slide"><img src="https://i.ibb.co/b5xXz4Xx/slide-07.png" alt="본식 07" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/qL9DgngW/slide-08.png" alt="본식 08" loading="lazy"></div>
     </div>
-    <div class="cl-nav"><button class="cl-prev" data-id="5">‹</button><div class="cl-dots" id="cl-dots-5"></div><button class="cl-next" data-id="5">›</button></div>
+    <div class="cl-nav"><button class="cl-prev" data-id="3">‹</button><div class="cl-dots" id="cl-dots-3"></div><button class="cl-next" data-id="3">›</button></div>
   </div>
 </div>
 
-<!-- 6. 피로연 에티켓 -->
 <div class="checklist-section fade-up" style="margin-bottom:0;">
-  <div class="checklist-header"><span class="checklist-num">06</span><span class="checklist-title">피로연 에티켓</span></div>
+  <div class="checklist-header"><span class="checklist-num">04</span><span class="checklist-title">피로연 에티켓</span></div>
   <div class="checklist-slider-wrap">
-    <div class="checklist-track" id="cl-track-6">
+    <div class="checklist-track" id="cl-track-4">
       <div class="cl-slide"><img src="https://i.ibb.co/3YPhSJs0/slide-01.png" alt="피로연 01" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/jkztYNkH/slide-02.png" alt="피로연 02" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/27xWK2xY/slide-03.png" alt="피로연 03" loading="lazy"></div>
@@ -444,13 +593,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cl-slide"><img src="https://i.ibb.co/60N56Dbw/slide-05.png" alt="피로연 05" loading="lazy"></div>
       <div class="cl-slide"><img src="https://i.ibb.co/Mx52Fc05/slide-06.png" alt="피로연 06" loading="lazy"></div>
     </div>
-    <div class="cl-nav"><button class="cl-prev" data-id="6">‹</button><div class="cl-dots" id="cl-dots-6"></div><button class="cl-next" data-id="6">›</button></div>
+    <div class="cl-nav"><button class="cl-prev" data-id="4">‹</button><div class="cl-dots" id="cl-dots-4"></div><button class="cl-next" data-id="4">›</button></div>
   </div>
 </div>
 
 <div class="divider"></div>
 
-<!-- CONTACT -->
+<!-- 문의 -->
 <div class="section">
   <div class="fade-up"><div class="sec-label">문의하기</div></div>
   <div class="fade-up">
@@ -469,7 +618,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="footer">© 2026 유재성 사회자. All rights reserved.</div>
 
-<!-- LIGHTBOX -->
+<!-- 라이트박스 -->
 <div id="lightbox" class="lightbox">
   <button class="lb-close" id="lbClose">✕</button>
   <button class="lb-arrow lb-prev" id="lbPrev">‹</button>
@@ -478,66 +627,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <script>
+/* 네비 스크롤 감지 */
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* Fade-up */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
 }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-const track = document.getElementById('reviewTrack');
-const slides = Array.from(track.querySelectorAll('.review-slide'));
-const dotsWrap = document.getElementById('revDots');
-const imgUrls = slides.map(s => s.querySelector('img').src);
-const perPage = window.innerWidth <= 480 ? 2 : 4;
-const pageCount = Math.ceil(slides.length / perPage);
-let cur = 0;
-
-for (let i = 0; i < pageCount; i++) {
-  const d = document.createElement('div');
-  d.className = 'review-dot' + (i === 0 ? ' active' : '');
-  d.addEventListener('click', () => goTo(i));
-  dotsWrap.appendChild(d);
-}
-function goTo(idx) {
-  cur = (idx + pageCount) % pageCount;
-  const sw = slides[0].offsetWidth + 10;
-  track.style.transform = `translateX(-${cur * perPage * sw}px)`;
-  dotsWrap.querySelectorAll('.review-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
-}
-document.getElementById('revPrev').addEventListener('click', () => goTo(cur - 1));
-document.getElementById('revNext').addEventListener('click', () => goTo(cur + 1));
-let auto = setInterval(() => goTo(cur + 1), 4000);
-const sliderWrap = document.getElementById('sliderWrap');
-sliderWrap.addEventListener('mouseenter', () => clearInterval(auto));
-sliderWrap.addEventListener('mouseleave', () => { auto = setInterval(() => goTo(cur + 1), 4000); });
-let tsx = 0, dragging = false;
-sliderWrap.addEventListener('touchstart', e => { tsx = e.touches[0].clientX; dragging = false; }, { passive: true });
-sliderWrap.addEventListener('touchmove', e => { if (Math.abs(e.touches[0].clientX - tsx) > 8) dragging = true; }, { passive: true });
-sliderWrap.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - tsx; if (dragging && Math.abs(dx) > 40) goTo(cur + (dx < 0 ? 1 : -1)); });
-
+/* 라이트박스 */
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lbImg');
-let lbIdx = 0;
-let lbImgList = imgUrls;
-
-function openLb(idx) { lbIdx = idx; lbImg.src = lbImgList[lbIdx]; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+let lbIdx = 0, lbImgList = [];
+function openLb(list, idx) { lbImgList = list; lbIdx = idx; lbImg.src = lbImgList[lbIdx]; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; }
 function lbMove(dir) { lbIdx = (lbIdx + dir + lbImgList.length) % lbImgList.length; lbImg.src = lbImgList[lbIdx]; }
-
-slides.forEach((s, i) => {
-  const img = s.querySelector('img');
-  let sx = 0, sy = 0;
-  img.addEventListener('mousedown', e => { sx = e.clientX; sy = e.clientY; });
-  img.addEventListener('mouseup', e => { if (Math.abs(e.clientX-sx)<6 && Math.abs(e.clientY-sy)<6) { lbImgList = imgUrls; openLb(i); } });
-  img.addEventListener('touchstart', e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
-  img.addEventListener('touchend', e => { const dx=Math.abs(e.changedTouches[0].clientX-sx), dy=Math.abs(e.changedTouches[0].clientY-sy); if(dx<10&&dy<10){e.preventDefault(); lbImgList=imgUrls; openLb(i);} });
-});
-
 document.getElementById('lbClose').addEventListener('click', closeLb);
 document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); lbMove(-1); });
 document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); lbMove(1); });
 lb.addEventListener('click', e => { if (e.target === lb || e.target === lbImg) closeLb(); });
 document.addEventListener('keydown', e => { if (!lb.classList.contains('open')) return; if (e.key==='Escape') closeLb(); if (e.key==='ArrowLeft') lbMove(-1); if (e.key==='ArrowRight') lbMove(1); });
 
+/* FAQ 아코디언 */
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+/* 체크리스트 슬라이더 */
 function initClSlider(id) {
   const track = document.getElementById(`cl-track-${id}`);
   const dotsWrap = document.getElementById(`cl-dots-${id}`);
@@ -570,12 +695,12 @@ function initClSlider(id) {
     if (!img) return;
     let sx = 0, sy = 0;
     img.addEventListener('mousedown', e => { sx = e.clientX; sy = e.clientY; });
-    img.addEventListener('mouseup', e => { if (Math.abs(e.clientX-sx)<6 && Math.abs(e.clientY-sy)<6) { lbImgList = Array.from(track.querySelectorAll('img')).map(im=>im.src); openLb(i); } });
+    img.addEventListener('mouseup', e => { if (Math.abs(e.clientX-sx)<6 && Math.abs(e.clientY-sy)<6) openLb(Array.from(track.querySelectorAll('img')).map(im=>im.src), i); });
     img.addEventListener('touchstart', e => { sx=e.touches[0].clientX; sy=e.touches[0].clientY; }, { passive: true });
-    img.addEventListener('touchend', e => { const dx=Math.abs(e.changedTouches[0].clientX-sx),dy=Math.abs(e.changedTouches[0].clientY-sy); if(dx<10&&dy<10){e.preventDefault(); lbImgList=Array.from(track.querySelectorAll('img')).map(im=>im.src); openLb(i);} });
+    img.addEventListener('touchend', e => { const dx=Math.abs(e.changedTouches[0].clientX-sx),dy=Math.abs(e.changedTouches[0].clientY-sy); if(dx<10&&dy<10){e.preventDefault(); openLb(Array.from(track.querySelectorAll('img')).map(im=>im.src), i);} });
   });
 }
-for (let i = 1; i <= 6; i++) initClSlider(i);
+for (let i = 1; i <= 4; i++) initClSlider(i);
 </script>
 </body>
 </html>
